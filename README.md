@@ -1,4 +1,4 @@
-# 🐍 Chackal Attack Surface - Web Scraper & Surface Recon
+# 🐍 Chackal Surface Attack- Web Scraper & Surface Recon
 
 **Chackal Attack** é uma ferramenta de automação para descoberta de **URLs** e **subdomínios**, utilizando buscas em fontes públicas como:
 
