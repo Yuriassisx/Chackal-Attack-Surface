@@ -1,83 +1,92 @@
-🐍 Chackal Attack - Web Scraper & Surface Recon
+# 🐍 Chackal Attack - Web Scraper & Surface Recon
 
-Chackal Attack é uma ferramenta de automação para descoberta de URLs e subdomínios utilizando buscas em fontes públicas como:Wayback Machine, Google, DuckDuckGo, CRT.sh e força bruta de caminhos.
+**Chackal Attack** é uma ferramenta de automação para descoberta de **URLs** e **subdomínios**, utilizando buscas em fontes públicas como:
 
-Ideal para uso em pentest, bug bounty ou footprinting.
+- Wayback Machine  
+- Google  
+- DuckDuckGo  
+- CRT.sh  
+- Força bruta de caminhos
 
-🚀 Pré-requisitos
+Ideal para **pentest**, **bug bounty** ou **footprinting**.
 
-Python 3.8 ou superior
+---
 
-Instale as dependências:
+## 🚀 Pré-requisitos
 
+- Python **3.8** ou superior
+
+Instale as dependências com:
+
+```bash
 pip install -r requirements.txt
+```
 
-⚡ Como usar
+---
 
+## ⚡ Como usar
+
+```bash
 python script.py -u <domínio> [opções]
+```
 
-📌 Argumentos principais
+---
 
-Argumento
+## 📌 Argumentos principais
 
-Descrição
+| Argumento           | Descrição                                                                 |
+|---------------------|------------------------------------------------------------------------------|
+| `-u`, `--url`       | (**obrigatório**) Domínio alvo. Ex: `-u example.com`                       |
+| `-k`, `--keyword`   | Palavra-chave opcional para buscas refinadas.                                |
+| `-o`, `--output`    | Arquivo de saída para salvar resultados. Suporta `.txt` e `.csv`.           |
+| `--strict-domain`  | Mantém apenas URLs que contenham o domínio exato.                            |
+| `--api`             | Lista as fontes: `crtsh`, `wayback`, `google`, `duckduckgo`. Múltiplos aceitos. |
+| `-v`, `--verbose`   | Ativa modo detalhado de log.                                                  |
 
--u, --url
+---
 
-(obrigatório) Domínio alvo. Ex: -u example.com
+## 💡 Exemplos de uso
 
--k, --keyword
+1. Buscar URLs de um domínio usando todas as APIs:
+   ```bash
+   python script.py -u example.com
+   ```
 
-Palavra-chave opcional para buscas refinadas.
+2. Buscar apenas no Wayback Machine e DuckDuckGo:
+   ```bash
+   python script.py -u example.com --api wayback duckduckgo
+   ```
 
--o, --output
+3. Usar uma palavra-chave específica:
+   ```bash
+   python script.py -u example.com -k login
+   ```
 
-Arquivo de saída para salvar resultados. Suporta .txt e .csv.
+4. Salvar resultados em um arquivo `.csv`:
+   ```bash
+   python script.py -u example.com -o resultado.csv
+   ```
 
---strict-domain
+5. Filtrar apenas URLs que contenham o domínio exato:
+   ```bash
+   python script.py -u example.com --strict-domain
+   ```
 
-Mantém apenas URLs que contenham o domínio exato.
+6. Ativar modo detalhado (debug):
+   ```bash
+   python script.py -u example.com -v
+   ```
 
---api
+---
 
-Lista as fontes: crtsh, wayback, google, duckduckgo. Pode usar múltiplos.
+## 💻 Sobre
 
--v, --verbose
+Script criado por **Yuri Assis** para auxiliar no mapeamento de superfície de aplicações web.  
+Confira meu perfil: LinkedIn: https://www.linkedin.com/in/yuri-assis-074a66200/
 
-Ativa modo detalhado de log.
+---
 
-💡 Exemplos de uso
+## ⚠️ Aviso Legal
 
-1️⃣ Buscar URLs de um domínio usando todas as APIs:
-
-python script.py -u example.com
-
-2️⃣ Buscar apenas no Wayback Machine e DuckDuckGo:
-
-python script.py -u example.com --api wayback duckduckgo
-
-3️⃣ Usar uma palavra-chave específica:
-
-python script.py -u example.com -k login
-
-4️⃣ Salvar resultados em um arquivo .csv:
-
-python script.py -u example.com -o resultado.csv
-
-5️⃣ Filtrar apenas URLs que contenham o domínio exato:
-
-python script.py -u example.com --strict-domain
-
-6️⃣ Modo detalhado (debug):
-
-python script.py -u example.com -v
-
-💻 Sobre
-
-Este script foi criado por Yuri Assis para auxiliar no mapeamento de superfície de aplicações web.Confira meu perfil:https://www.linkedin.com/in/yuri-assis-074a66200/
-
-⚠️ Aviso Legal
-
-Este script é para fins educacionais e de teste autorizado.Não use em sistemas sem permissão. O uso indevido é de inteira responsabilidade do usuário.
-
-
+Este script é para **fins educacionais e de teste autorizado**.  
+**Não use** em sistemas sem permissão. O uso indevido é de inteira responsabilidade do usuário.
