@@ -96,3 +96,6 @@ Confira meu perfil: LinkedIn: https://www.linkedin.com/in/yuri-assis-074a66200/
 
 Este script é para **fins educacionais e de teste autorizado**.  
 **Não use** em sistemas sem permissão. O uso indevido é de inteira responsabilidade do usuário.
+---
+
+## 💸Doações pro Projeto
