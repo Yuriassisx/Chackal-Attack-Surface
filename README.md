@@ -99,3 +99,4 @@ Este script é para **fins educacionais e de teste autorizado**.
 ---
 
 ## 💸Doações pro Projeto
+**Chave Pix: 1d7cb377-c78d-46a8-9796-009170de6f56**
