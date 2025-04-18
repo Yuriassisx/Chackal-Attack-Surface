@@ -82,8 +82,49 @@ python script.py -u <domínio> [opções]
    ```bash
    python script.py -u example.com -v
    ```
+🔮 **Futuro da Ferramenta**
 
----
+**Busca de Leaks de Credenciais**
+
+Integração com fontes públicas e privadas de vazamentos
+
+Monitoramento contínuo e alertas de novas exposições
+
+Suporte a múltiplos formatos de dumps (txt, json, pastebin, etc.)
+
+**Busca de URLs na Deep Web**
+
+Raspagem e indexação de serviços .onion
+
+Detecção de menções a ativos da empresa (e-mails, domínios, IPs)
+
+Utilização de proxies TOR e rotatividade de identidade
+
+**Spider-Bot**
+
+Varredura automática de sites para coleta de links e endpoints
+
+Detecção de formulários e possíveis vetores de ataque
+
+Suporte a autenticação e navegação dinâmica (JS-rendered)
+
+**Filtros de Buscas**
+
+Personalização dos parâmetros de varredura (por domínio, extensão, tipo de dado)
+
+Filtros por data, reputação da fonte e tipo de conteúdo
+
+Sistema de whitelist e blacklist
+
+**Injeção de Payloads por Parâmetros**
+
+Testes automáticos de injeção (XSS, SQLi, LFI, RCE)
+
+Geração e execução de payloads customizados
+
+Detecção de respostas vulneráveis com análise heurística
+
+
 
 ## 💻 Sobre
 
