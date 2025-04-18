@@ -82,7 +82,7 @@ python script.py -u <domínio> [opções]
    ```bash
    python script.py -u example.com -v
    ```
-🔮 **Futuro da Ferramenta**
+## 🔮 **Futuro da Ferramenta**
 
 **1.Busca de Leaks de Credenciais**
 
